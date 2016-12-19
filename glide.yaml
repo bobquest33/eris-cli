@@ -1,0 +1,60 @@
+package: github.com/eris-ltd/eris-cli
+import:
+- package: github.com/BurntSushi/toml
+- package: github.com/bugsnag/bugsnag-go
+- package: github.com/docker/docker
+  version: master
+  subpackages:
+  - pkg/archive
+  - pkg/jsonmessage
+  - pkg/term
+- package: github.com/eris-ltd/common
+  subpackages:
+  - go/docs
+- package: github.com/eris-ltd/eris-compilers
+  version: develop
+  subpackages:
+  - perform
+- package: github.com/eris-ltd/eris-db
+  version: feature_consolidate
+  subpackages:
+  - client
+  - client/core
+  - genesis
+  - keys
+  - txs
+- package: github.com/eris-ltd/eris-keys
+  subpackages:
+  - crypto
+  - eris-keys
+- package: github.com/fsouza/go-dockerclient
+- package: github.com/kr/text
+  subpackages:
+  - colwriter
+- package: github.com/oleiade/reflections
+- package: github.com/pborman/uuid
+- package: github.com/rs/cors
+- package: github.com/serenize/snaker
+- package: github.com/spf13/cobra
+- package: github.com/spf13/pflag
+- package: github.com/spf13/viper
+- package: github.com/tcnksm/go-gitconfig
+- package: github.com/tendermint/go-wire
+- package: golang.org/x/sys
+  subpackages:
+  - unix
+- package: gopkg.in/yaml.v2
+- package: github.com/gogo/protobuf
+  version: a11c89fbb0ad4acfa8abc4a4d5f7e27c477169b1
+  subpackages:
+  - proto
+- package: github.com/golang/protobuf
+  version: 1f49d83d9aa00e6ce4fc8258c71cc7786aec968a
+  subpackages:
+  - proto
+- package: github.com/bugsnag/osext
+  version: 0dd3f918b21bec95ace9dc86c7e70266cfc5c702
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
