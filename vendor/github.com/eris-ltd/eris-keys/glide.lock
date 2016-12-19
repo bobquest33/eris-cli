@@ -1,5 +1,5 @@
 hash: ad2c9d7d8a027e943242d73f0cc7ac6bd10ec98023d19dee82e1afc24dbb9b6c
-updated: 2016-10-04T15:02:51.783163666+02:00
+updated: 2016-11-04T02:25:09.52828941+01:00
 imports:
 - name: github.com/bugsnag/bugsnag-go
   version: 718a5c3648c101c24adc20b7d3fe0be7af35a17a
@@ -8,7 +8,7 @@ imports:
 - name: github.com/bugsnag/panicwrap
   version: aa7703c9414b36d4e9b2e42e6c704d0bfae7db64
 - name: github.com/eris-ltd/common
-  version: 03f50d734b86d2a997233fa4cc34f800c1d16048
+  version: 8ca15f5455104403db4202c995e2f6e161654c02
   subpackages:
   - go/common
   - go/docs
@@ -62,10 +62,10 @@ imports:
 - name: golang.org/x/crypto
   version: bde08f269ed27dc9a9c105465110825e04ab3d41
   subpackages:
-  - sha3
+  - pbkdf2
   - ripemd160
   - scrypt
-  - pbkdf2
+  - sha3
   - ssh/terminal
 - name: golang.org/x/net
   version: ffe101cce3477a6c6d8f0754d103bb0a84ec1266
@@ -75,4 +75,4 @@ imports:
   version: 8f0908ab3b2457e2e15403d3697c9ef5cb4b57a9
   subpackages:
   - unix
-devImports: []
+testImports: []
